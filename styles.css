@@ -15,11 +15,39 @@ body {
 
 /* Header Section */
 header {
-    background: #0a0316;
+    top: 0;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #0a0316;
     color: #fff;
-    padding: 1rem 0;
     text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+    z-index: 1000;
 
+
+}
+.header-small {
+    position: fixed;
+    width: 100%;
+    background-color: #0a0316;
+    color: #fff;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.3s ease, font-size 0.3s ease;
+    z-index: 56;
+    padding: 10px 10px;
+}
+.header-small h1 {
+    font-size: 18px;
+}
+.header-small .header-image{
+    width: 50px;           /* Set a fixed width for the image */
+    height: 50px;          /* Maintain aspect ratio */
+    margin-right: 10px;  /* Space between image and heading */
+    padding: 0.3rem 0;
 }
 .head-imgtxt{
     max-width: 1200px; 
@@ -30,11 +58,12 @@ header {
     
 }
 .header-image {
-    width: 200;           /* Set a fixed width for the image */
-    height: 200;          /* Maintain aspect ratio */
+    width: 200px;           /* Set a fixed width for the image */
+    height: 200px;          /* Maintain aspect ratio */
     margin-right: 10px;  /* Space between image and heading */
     padding: 0.3rem 0;
 }
+
 .header-b {
     margin: auto;
     margin-left: 0;
@@ -75,7 +104,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffd700;
+    color: #ffb000;
 }
 
 /* Main Content Section */
@@ -84,7 +113,24 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+.main-imgtxt{
+    margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.main-image {
+    margin-right: 10px;  /* Space between image and heading */
+    padding: 0.3rem 0;
+}
+.main-p {
 
+}
+.peoples-b {
+    margin: auto;
+    margin-left: 10px;
+               /* Remove default margin for h1 */
+}
 main section {
     margin-bottom: 2rem;
 }
@@ -100,10 +146,14 @@ p {
 
 /* Footer Section */
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background: #0a0316;
     color: #fff;
     text-align: center;
     padding: 1rem;
+
 }
 
 footer p {
@@ -128,9 +178,18 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-    color: #ffd700;
+    color: #ffb000;
 }
 
+
+a {
+    color: #00b0e8;
+
+}
+a:hover {
+    color: #ffb000;
+
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     nav ul {

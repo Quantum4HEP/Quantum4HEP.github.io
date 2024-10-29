@@ -9,6 +9,22 @@ async function loadHeader() {
 
         const data = await response.text();
         document.getElementById("header").innerHTML = data;
+        const h3head = document.getElementById("h3head");
+        const h3headcopy = document.getElementById("h3head");
+        let lastScrollTop = 0;
+
+        window.addEventListener("scroll", function () {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            // Add or remove class based on scroll direction
+            if (scrollTop > lastScrollTop) {
+                header.classList.add("header-small");
+            } else if (scrollTop === 0) {
+                header.classList.remove("header-small");
+            }
+
+            lastScrollTop = scrollTop;
+        });
     } catch (error) {
         console.error("Error loading header:", error);
     }
@@ -36,3 +52,4 @@ async function loadfooter() {
 
 // Call the function to load the footer
 loadfooter();
+
