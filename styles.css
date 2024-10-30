@@ -23,7 +23,7 @@ header {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    transition: padding 0.3s ease, font-size 0.3s ease;
+    transition: padding 0.8s ease, font-size 0.8s ease;
     z-index: 1000;
 
 
@@ -36,16 +36,19 @@ header {
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    transition: padding 0.3s ease, font-size 0.3s ease;
+    transition: padding 0.8s ease, font-size 0.8s ease;
     z-index: 56;
     padding: 10px 10px;
 }
 .header-small h1 {
     font-size: 18px;
 }
+.header-small h3 {
+    font-size: 0px;
+}
 .header-small .header-image{
     width: 50px;           /* Set a fixed width for the image */
-    height: 50px;          /* Maintain aspect ratio */
+    height: auto;          /* Maintain aspect ratio */
     margin-right: 10px;  /* Space between image and heading */
     padding: 0.3rem 0;
 }
@@ -85,6 +88,7 @@ header h1 {
     padding: 0.3rem 0;
     max-width: 1200px;
     margin: auto;
+    color: #fff;
 }
 
 nav ul {
@@ -139,6 +143,8 @@ h2 {
     color: #333;
     margin-bottom: 1rem;
 }
+
+
 
 p {
     margin-bottom: 1rem;
