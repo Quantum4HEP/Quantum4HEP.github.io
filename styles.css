@@ -123,9 +123,10 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.main-image {
+.main-image-peoples {
     margin-right: 10px;  /* Space between image and heading */
     padding: 0.3rem 0;
+    width:200px
 }
 .main-p {
 
@@ -267,4 +268,19 @@ header .header-image{
     padding: 10px 10px;
 
     }
+    .main-image-peoples {
+    margin-right: 10px;  /* Space between image and heading */
+    padding: 0.3rem 0;
+    width:100px
+}
+footer ul li a {
+    color: #fff;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+footer{
+    bottom: 0px;
+    position: static;
+    font-size: 0.8rem;
+}
 }
