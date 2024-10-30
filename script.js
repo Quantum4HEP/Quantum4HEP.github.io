@@ -25,6 +25,9 @@ async function loadHeader() {
 
             lastScrollTop = scrollTop;
         });
+        document.querySelector(".menu-toggle").addEventListener("click", function () {
+    document.querySelector(".nav-links").classList.toggle("show");
+  });
     } catch (error) {
         console.error("Error loading header:", error);
     }
