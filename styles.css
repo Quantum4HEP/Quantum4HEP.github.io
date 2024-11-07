@@ -279,7 +279,6 @@ footer ul li a {
     text-decoration: none;
 }
 footer{
-    bottom: 0px;
     position: static;
     font-size: 0.8rem;
 }
